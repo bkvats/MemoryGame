@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+/* body {
+    background-color: #f0f4f9;
+} */
+header {
+    width: 98vw;
+    height: 90vh;
+    background-color: blanchedalmond;
+}
+nav {
+    width: 100%;
+    background-color: #f0f4f9;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+}
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.card {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f0f4f9;
+    /* border-radius: 10px; */
+    /* box-shadow: inset 0px 0px 5px 0px black; */
+    margin-bottom: 0.5em;
+}
+.container {
+    width: 22em;
+    height: 23em;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+    transform: perspective(500px) rotateX(0deg) rotateY(25deg) skew(0deg)
+}
+.pbox {
+    border-radius: 10px;
+    box-shadow: -4px 4px 14px 0px black;
+}
+.red {
+    background-color: #ff0000c7;
+}
+.yellow {
+    background-color: #ffff00f0;
+}
+.blue {
+    background-color: #0866ff;
+}
+.green {
+    background-color: #42b72a;
+}
+.white {
+    background-color: white;
+}
+.content {
+    width: 40%;
+}
+.content h1 {
+    font-size: 3.5em;
+}
+.content p {
+    font-size: 1.2em;
+    margin: 2em 0;
+    color: rgba(0, 0, 0, 0.584);
+    font-weight: 500;
+}
+.primary-button {
+    font-size: 1.5em;
+    padding: 0 1em;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #464FEB;
+    color: #464FEB;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    margin: 0 0.5em;
+}
+.primary-button:hover {
+    background-color: #464eeb22;
+}
+.heart {
+    width: 1em;
+
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f4f9;
+}
+footer> div> p {
+    text-align: center;
+}

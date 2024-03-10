@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+.mainOfPageTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bulb {
+    width: 1.5em;
+}
+.startimg {
+    width: 3em;
+}
+.trophyimg {
+    width: 3.5em;
+}
+.topbar {
+    width: 80%;
+    margin: 1em 0;
+}
+.rocket {
+    width: 3.5em;
+    transform: rotate(90deg);
+    position: absolute;
+    transition: margin-left 0.5s ease-in-out;
+}
+.progress {
+    width: 100%;
+    height: 0.1em;
+    background-color: blueviolet;
+    margin: 1em 0;
+}
+.progresssection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.imagesection {
+    display: flex;
+    justify-content: space-between;
+}
+.time {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: "Orbitron", sans-serif;
+}
+.clickstatus {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: auto;
+}
+.gamecontainer {
+    width: 22em;
+    height: 23em;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+    margin: 2.5em 0;
+}
+.box {
+    /* border: 2px solid whitesmoke; */
+    border-radius: 10px;
+    border: none;
+}
+.box:hover {
+    box-shadow: 0px 0px 8px 5px black;
+    cursor: pointer;
+}
+.rightanimation {
+    animation: correct 0.3s linear 0s 1;
+}
+.wronganimation {
+    animation: wrong 0.3s linear 0s 1;
+}
+@keyframes correct {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0px 0px 50px 15px darkgreen;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+@keyframes wrong {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0px 0px 50px 15px darkred;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+.blackpage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startsection {
+    width: 55%;
+    min-height: 10em;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.tip {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #961e1ea8;
+}
+.playbutton {
+    width: 4.5em;
+    cursor: pointer;
+}
+.playbutton:hover {
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+.tipsection {
+    display: flex;
+}
