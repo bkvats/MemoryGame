@@ -172,7 +172,7 @@ function secondPage() {
     time.className = "time";
     topbar.append(images, progessection, time);
     main.append(topbar);
-    movevalue = progressbar.offsetWidth / 5;
+    movevalue = progressbar.offsetWidth / 20;
     let gamecontainer = document.createElement("div");
     gamecontainer.classList.add("gamecontainer");
     boxes = [];
