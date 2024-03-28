@@ -14,6 +14,9 @@ function flash(box) {
     })
 }
 function clearPage() {
+    if (document.body.firstElementChild.className === "blackpage") {
+        document.body.firstElementChild.remove();
+    }
     let main = document.getElementsByTagName("main")[0];
     if (main.childElementCount) {
         let previousOnPage = Array.from(main.children);
@@ -22,28 +25,43 @@ function clearPage() {
         }
     }
 }
+function addHeaderandFooter() {
+    let main = document.getElementsByTagName("main")[0];
+    let nav = document.createElement("nav");
+    document.body.prepend(nav);
+    let home = document.createElement("a");
+    home.href = "#";
+    home.innerText = "Home";
+    let playnow = document.createElement("a");
+    playnow.href = "#";
+    playnow.innerText = "Play Now";
+    let about = document.createElement("a");
+    about.href = "#";
+    about.innerText = "About";
+    let links = document.createElement("div");
+    links.className = "links";
+    links.append(home, playnow, about);
+    nav.append(links);
+    main.insertAdjacentElement("beforebegin", nav);
+
+    let footer = document.createElement("footer");
+    let naam = document.createElement("div");
+    let hcwl = document.createElement("p");
+    let myname = document.createElement("p");
+    let email = document.createElement("p");
+    hcwl.innerHTML = 'Handcrafterd with <img src = "images/heart.png" class = "heart">';
+    myname.innerText = 'By "Bhupender Kr. Sharma"';
+    email.innerText = '(bkvats2394@gmail.com)';
+    naam.append(hcwl, myname, email);
+    let copyright = document.createElement("p");
+    copyright.innerHTML = "&copy; 2024 All rights reserved."
+    footer.append(naam, copyright);
+    main.insertAdjacentElement("afterend", footer);
+}
 function firstPage() {
     clearPage();
     let main = document.getElementsByTagName("main")[0];
-    // let nav = document.createElement("nav");
-    // document.body.prepend(nav);
-    // let logo = document.createElement("img");
-    // logo.src = "logo.png";
-    // logo.width = 200;
-    // nav.append(logo);
-    // document.body.lastElementChild.insertAdjacentElement("beforebegin", main);
-    // let home = document.createElement("a");
-    // home.href = "#";
-    // home.innerText = "Home";
-    // let playnow = document.createElement("a");
-    // playnow.href = "#";
-    // playnow.innerText = "Play Now";
-    // let about = document.createElement("a");
-    // about.href = "#";
-    // about.innerText = "About Us";
-    // let links = document.createElement("div");
-    // links.append(home, playnow, about);
-    // nav.append(links);
+    main.className = "";
     let card1 = document.createElement("div");
     card1.classList.add("card");
     let gamepreview = document.createElement("div");
@@ -75,6 +93,7 @@ function firstPage() {
     start.innerHTML = "Play Now!";
     start.className = "primary-button";
     start.addEventListener("click", () => {
+        clearInterval(flashInterval);
         secondPage();
     });
     let howtoplaybutton = document.createElement("button");
@@ -106,14 +125,10 @@ function firstPage() {
     trophy.width = 400;
     card2.append(content2, trophy);
     main.append(card2);
-    // let footer = document.createElement("footer");
-    // let naam = document.createElement("div");
-    // let make = document.createElement("p");
-    // make.innerHTML = 'Handcrafterd with <img src = "heart.png" class = "heart"> By "Bhupender Kr. Sharma"';
-    // let copyright = document.createElement("p");
-    // copyright.innerHTML = "&copy; 2024 Bakdap Solutions Pvt. Ltd. All rights reserved."
-    // naam.append(make);
-    // footer.append(naam, copyright);
-    // main.insertAdjacentElement("afterend", footer);
 }
+addHeaderandFooter();
+let links = Array.from(document.querySelector(".links").children);
+links[0].addEventListener("click", firstPage);
+links[1].addEventListener("click", secondPage);
+links[2].addEventListener("click", about);
 firstPage();

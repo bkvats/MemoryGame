@@ -4,9 +4,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 84vh;
 }
 .bulb {
     width: 1.5em;
+    margin-top: 0.4em;
+    place-self: flex-start;
+}
+.colorarea {
+    height: 8em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+}
+.orangecolor {
+    background-color: #f77e00;
 }
 .startimg {
     width: 3em;
@@ -15,6 +30,9 @@
     width: 3.5em;
 }
 .topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     margin: 1em 0;
 }
@@ -36,6 +54,7 @@
     width: 100%;
 }
 .imagesection {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -43,7 +62,6 @@
     text-align: center;
     font-weight: bold;
     font-size: 2.5em;
-    font-family: "Orbitron", sans-serif;
 }
 .clickstatus {
     display: flex;
@@ -61,7 +79,6 @@
     margin: 2.5em 0;
 }
 .box {
-    /* border: 2px solid whitesmoke; */
     border-radius: 10px;
     border: none;
 }
@@ -73,7 +90,7 @@
     animation: correct 0.3s linear 0s 1;
 }
 .wronganimation {
-    animation: wrong 0.3s linear 0s 1;
+    animation: wrong 0.3s linear 0s 3;
 }
 @keyframes correct {
     0% {
@@ -105,9 +122,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
-.startsection {
-    width: 55%;
+.mainsection {
+    width: 30%;
     min-height: 10em;
     background-color: whitesmoke;
     display: flex;
@@ -117,19 +135,126 @@
     border-radius: 6px;
     box-shadow: 0px 0px 10px 0px black;
 }
-.tip {
+.overtext {
     font-size: 1.5em;
-    font-weight: 500;
-    color: #961e1ea8;
+    font-weight: bold;
+    color: #f77e00;
 }
-.playbutton {
-    width: 4.5em;
+.mainbutton {
+    width: 3.5em;
     cursor: pointer;
 }
-.playbutton:hover {
-    border: 2px solid orange;
-    border-radius: 5px;
+.mainbutton:hover {
+    width: 4em;
 }
-.tipsection {
+.oversection {
     display: flex;
+    margin: 1em 0;
+}
+.scoresection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    gap: 0.5em;
+    cursor: default;
+}
+.close {
+    width: 2em;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 5px;
+}
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.redcolor {
+    background-color: lightcoral;
+}
+.wrongtext {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: overline;
+    text-align: center;
+}
+.gameover {
+    color: lightcoral;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+}
+.scoretext {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: lightseagreen;
+}
+.scoreimg {
+    width: 2em;
+}
+.replayimg {
+    width: 3.5em;
+    cursor: pointer;
+    margin: 1em;
+}
+.displayscore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cryingimg {
+    width: 5.5em;
+}
+.bluecolor {
+    background-color: #273B7A;
+}
+.fontcolorblue {
+    color: #273B7A;
+}
+.greencolor {
+    background-color: #45B39C;
+}
+.fontcolorgreen {
+    color: #45B39C;
+}
+.winimg {
+    width: 9em;
+}
+.fontcolorcoral {
+    color: coral;
+}
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    min-width: 25%;
+}
+.timer img {
+    width: 2em;
+}
+.timebar {
+    height: 0.5em;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.2s linear 0s;
+}
+.lesstime {
+    animation: redtime 1s linear 0s infinite;
+}
+@keyframes redtime {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+      }
+      50% {
+        opacity: 1;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
 }
