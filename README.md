@@ -1,5 +1,5 @@
 <h1>Memory Mastermind Game</h1>
-
+<h2><a href="https://bkvats.github.io/MemoryGame/">👉 <i>Play Now</i> 👈</a></h2>
 <p>Welcome to Memory Mastermind, a captivating memory challenge game where you test and enhance your memory skills in a fun and interactive way!</p>
 
 <h2>Table of Contents</h2>
