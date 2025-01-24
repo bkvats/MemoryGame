@@ -1,6 +1,6 @@
-<h1>Memory Mastermind Game</h1>
+<h1>Memory Mania/h1>
 <h2><a href="https://bkvats.github.io/MemoryGame/" target="_blank">👉 <i>Play Now</i> 👈</a></h2>
-<p>Welcome to Memory Mastermind, a captivating memory challenge game where you test and enhance your memory skills in a fun and interactive way!</p>
+<p>Welcome to Memory Mania, a captivating memory challenge game where you test and enhance your memory skills in a fun and interactive way!</p>
 
 <h2>Table of Contents</h2>
 
@@ -15,7 +15,7 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Memory Mastermind is a mind-bending game designed to challenge your memory and improve your cognitive abilities. With colorful boxes and engaging gameplay, this game offers an immersive experience that will keep you coming back for more.</p>
+<p>Memory Mania is a mind-bending game designed to challenge your memory and improve your cognitive abilities. With colorful boxes and engaging gameplay, this game offers an immersive experience that will keep you coming back for more.</p>
 
 <h2 id="features">Features</h2>
 
@@ -38,7 +38,7 @@
 
 <h2 id="installation">Installation</h2>
 
-<p>To play Memory Mastermind, follow these steps:</p>
+<p>To play Memory Mania, follow these steps:</p>
 
 <p>You can play the game in two ways:</p>
 
@@ -49,7 +49,7 @@
 
 <h2 id="contributing">Contributing</h2>
 
-<p>We welcome contributions from the community to improve Memory Mastermind. If you have any ideas for new features, bug fixes, or enhancements, feel free to open an issue or submit a pull request. Together, we can make this game even better!</p>
+<p>We welcome contributions from the community to improve Memory Mania. If you have any ideas for new features, bug fixes, or enhancements, feel free to open an issue or submit a pull request. Together, we can make this game even better!</p>
 
 <h2 id="license">License</h2>
 Bhupender Kumar Sharma Game License
