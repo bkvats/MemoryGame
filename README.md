@@ -1,4 +1,4 @@
-<h1>Memory Mania/h1>
+<h1>Memory Mania</h1>
 <h2><a href="https://bkvats.github.io/MemoryGame/" target="_blank">👉 <i>Play Now</i> 👈</a></h2>
 <p>Welcome to Memory Mania, a captivating memory challenge game where you test and enhance your memory skills in a fun and interactive way!</p>
 
